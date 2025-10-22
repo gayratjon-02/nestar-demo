@@ -3,6 +3,9 @@ import { Stack } from "@mui/material";
 import Footer from "../Footer";
 import Top from "../Top";
 import HeaderFilter from "../homepage/HeaderFilter";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const withLayoutMain = (Component: any) => {
   return (props: any) => {
@@ -17,9 +20,9 @@ const withLayoutMain = (Component: any) => {
           </Stack>
           <Stack className={"header-main"}>
             <Stack className="container">
-                <HeaderFilter/>
-              </Stack>            
+              <HeaderFilter />
             </Stack>
+          </Stack>
 
           <Stack id={"main"}>
             <Component {...props} />
